@@ -322,126 +322,38 @@
 	<div class="myClass">
 		<img src="images/bgs/overlay.gif">
 	</div>
-	<div id="myNavBtns" style="display: none">
-		<button onclick="frontTime()" style="display: none;" id="myFrontBtn">DJ_SETS</button>
-		<button onclick="lyricTime()" style="display: inline" id="myLyricBtn">MUSIC</button>
-		<button onclick="backTime()" style="display:none"id="myBackBtn">VLOGS</button>
-		<button onclick="pReelTime()" style="display:none;" id="myPReelBtn">UPCOMING</button>
-	</div>
 	<span id="dots"></span>
 	<span id="moreLyrics">
 		<divMoveDown>
 			<p style="margin-top:5vh; margin-bottom: 10vh; font-family: helvetica; font-size: 10vw; position: relative; color:gold; z-index: 1; text-shadow: 0px 0px 10px black; text-decoration: none; z-index: 1;">
 				<i>ihatetheinternet <br>out now</i>
 			</p>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104413857&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/avaulo" title="avaulo" target="_blank" style="color: #cccccc; text-decoration: none;">avaulo</a> · <a href="https://soundcloud.com/avaulo/ihatetheinternet" title="ihatetheinternet" target="_blank" style="color: #cccccc; text-decoration: none;">ihatetheinternet</a></div>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104413857&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/avaulo" title="avaulo" target="_blank" style="color: #cccccc; text-decoration: none;">avaulo</a> · <a href="https://soundcloud.com/avaulo/ihatetheinternet" title="ihatetheinternet" target="_blank" style="color: #cccccc; text-decoration: none;">ihatetheinternet</a></div>
 			<br>
 			<br>
 			<div style="font-size: 16px;font-family:helvetica; font-style:italic;">
 				<a style="text-decoration:none; color:yellow" href="https://www.instagram.com/avauloflores">
-				instagram
+				my instagram:P
 			</a>
 			</div>
 			<br>
 			<div style="font-size: 16px;font-family:helvetica; font-style:italic;">
 				<a style="text-decoration:none; color:yellow" href="https://www.soundcloud.com/avaulo">
-				more
+				my music:)
 			</a>
 			</div>
 			<br>
+			<div style="font-size: 16px;font-family:helvetica; font-style:italic; text-align: left; padding: 128px; margin: 128px;">
+				<div style="font-size: 32px; color: white;">
+				about me
+			</div>
+			<div style="font-size: 16px; color: lavender;">
+			my name is avaulo flores, and i make music about stuff that happens to me. life is wild and every
+			day i'm learning so much and i'd like to take you along with me on this journey.
+		</div>
 		</divMoveDown>
 	</span>
 </body>
 <script>
-	var moreLyrics = document.getElementById("moreLyrics");
-	var moreChron = document.getElementById("moreChron");
-	var morePReel = document.getElementById("morePReel");
-	var moreFront = document.getElementById("moreFront");
-	var moreBack = document.getElementById("moreBack");
-	var myBackBtn = document.getElementById("myBackBtn");
-	var myFrontBtn = document.getElementById("myFrontBtn");
-	var myLyricBtn = document.getElementById("myLyricBtn");
-	var myPReelBtn = document.getElementById("myPReelBtn");
-	const el = document.getElementById('myNavBtns');
-	var scale;
-
-	function frontTime() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-		if (moreFront.style.display === "inline") {
-			// moreFront.style.display = "none";
-		} else {
-			myFrontBtn.focus();
-			myLyricBtn.blur();
-			myBackBtn.blur();
-			myPReelBtn.blur();
-			moreFront.style.display = "inline";
-			moreLyrics.style.display = "none";
-			moreBack.style.display = "none";
-			morePReel.style.display = "none";
-		}
-	}
-
-	function backTime() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-		if (moreBack.style.display === "inline") {
-			// moreFront.style.display = "none";
-		} else {
-			myBackBtn.focus();
-			myFrontBtn.blur();
-			myLyricBtn.blur();
-			myPReelBtn.blur();
-			moreBack.style.display = "inline";
-			moreLyrics.style.display = "none";
-			moreFront.style.display = "none";
-			morePReel.style.display = "none";
-		}
-	}
-
-	function lyricTime() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-		if (moreLyrics.style.display === "inline") {
-			// moreFront.style.display = "none";
-		} else {
-			myLyricBtn.focus();
-			myFrontBtn.blur();
-			myBackBtn.blur();
-			myPReelBtn.blur();
-			moreLyrics.style.display = "inline";
-			moreFront.style.display = "none";
-			moreBack.style.display = "none";
-			morePReel.style.display = "none";
-		}
-	}
-
-	function pReelTime() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-		if (morePReel.style.display === "inline") {
-			// moreFront.style.display = "none";
-		} else {
-			myPReelBtn.focus();
-			myFrontBtn.blur();
-			myBackBtn.blur();
-			myLyricBtn.blur();
-			morePReel.style.display = "inline";
-			moreLyrics.style.display = "none";
-			moreBack.style.display = "none";
-			moreFront.style.display = "none";
-		}
-	}
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset;
-		if (prevScrollpos > currentScrollPos || window.pageYOffset < 20) {
-			document.getElementById("myNavBtns").style.top = "0";
-		} else {
-			document.getElementById("myNavBtns").style.top = "-20vh";
-		}
-		prevScrollpos = currentScrollPos;
-	}
 </script>
-
 </html>
